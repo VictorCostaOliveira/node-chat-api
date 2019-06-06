@@ -14,9 +14,6 @@ const app = new express()
 app.use(bodyParser.json())
 app.use(cors())
 
-// const server = http.createServer(app);
-// server.listen(5000, '0.0.0.0');
-
 const server = app.listen(5000, '0.0.0.0', () => {
   console.log("I am running at port 5000")
 });
